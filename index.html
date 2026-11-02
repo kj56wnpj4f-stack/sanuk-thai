@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanuk Thai</title>
+  <meta name="description" content="Thais leren voor op reis: restaurant, onderweg, hotel en markt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <button class="brand" id="homeBtn" aria-label="Naar start">
+      <span class="brand-th">สนุก</span> <span>Sanuk Thai</span>
+    </button>
+    <nav class="nav">
+      <button data-view="home" class="navbtn">Lessen</button>
+      <button data-view="menu" class="navbtn">Menukaart</button>
+      <button data-view="tones" class="navbtn">Tonen</button>
+    </nav>
+    <div class="gender" role="group" aria-label="Ik ben">
+      <button data-g="m" class="gbtn">Man · khráp</button>
+      <button data-g="f" class="gbtn">Vrouw · khâ</button>
+    </div>
+  </header>
+  <div id="voiceNote" class="voice-note" hidden></div>
+  <main id="app"></main>
+  <div id="overlay" class="overlay" hidden></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
